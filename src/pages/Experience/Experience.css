@@ -1,0 +1,58 @@
+.exp {
+  margin-top: 2rem;
+  text-align: center;
+  width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2.4rem;
+}
+.expHead {
+  margin-bottom: 1.6rem;
+}
+.expMain {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  /* padding: 0.8rem; */
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.expAll {
+  width: 20rem;
+  border: 2px solid black;
+  padding-bottom: 0.8rem;
+}
+
+.expAll:hover {
+  cursor: pointer;
+
+  background-color: black;
+  color: white;
+}
+.expMain:hover {
+  .infoExp {
+    display: block;
+    margin-top: 0.7rem;
+  }
+
+  .expAll {
+    padding-bottom: 0;
+  }
+}
+.infoExp {
+  display: none;
+}
+#zealyug {
+  margin-bottom: 7.1rem;
+  width: 390px;
+  height: 30px;
+}
+#zealyug img {
+  width: 100%;
+}
+#expInfoHide {
+  width: 14rem;
+  display: none;
+}

@@ -1,0 +1,39 @@
+.head {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.common {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem;
+  border-radius: 0.7rem;
+  /* border: 2px solid black; */
+  gap: 0.35rem;
+}
+.imgContainer {
+  width: 16rem;
+  object-fit: cover;
+}
+.courseMain {
+  border: 2px solid black;
+  /* padding: 0.7rem; */
+  cursor: pointer;
+}
+.providence {
+  width: 100%;
+}
+.courseMain:hover {
+  background-color: black;
+  color: white;
+}
+.eduMain {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
