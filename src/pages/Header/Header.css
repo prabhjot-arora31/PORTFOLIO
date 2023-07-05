@@ -1,0 +1,134 @@
+/* @media screen and (max-width: 991px) { */
+.main {
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+  position: relative;
+  align-items: center;
+}
+.logo {
+  /* position: relative; */
+  min-width: 90px;
+  max-width: 90px;
+  padding: 1.2rem;
+}
+.logo img {
+  /* position: absolute; */
+  border-radius: 50%;
+  width: 100%;
+}
+.links {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  /* max-width: 800px; */
+  align-items: center;
+  gap: 3.4rem;
+  /* transition: all 0.3s; */
+  /* transition-timing-function: ease-in-out; */
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.hide_cross {
+  display: none;
+  cursor: pointer;
+}
+/* } */
+/* .show_cross {
+    display: none;
+} */
+@media screen and (max-width: 990px) {
+  .hamburger {
+    position: absolute;
+    display: block;
+    right: 4rem;
+    top: 4.3rem;
+  }
+  .logo {
+    position: absolute;
+    top: 0.8rem;
+    left: 2rem;
+  }
+  .links {
+    /* display: none; */
+    right: -100rem;
+    animation-name: menu;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes menu {
+    0% {
+      .links {
+        right: -100rem;
+      }
+    }
+    25% {
+      .links {
+        right: -20rem;
+      }
+    }
+    50% {
+      .links {
+        right: -15rem;
+      }
+    }
+    75% {
+      .links {
+        right: -10rem;
+      }
+    }
+    100% {
+      .links {
+        right: -7rem;
+      }
+    }
+  }
+  .hide_hamburger {
+    display: none;
+  }
+  .vertical_links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* top: 3rem; */
+    gap: 3.5rem;
+    right: 7rem;
+    background-color: lightgray;
+    padding: 0.6rem;
+    height: 98vh;
+  }
+  .hide_logo {
+    display: none;
+  }
+  .show_cross {
+    position: absolute;
+    cursor: pointer;
+    top: 15rem;
+    /* width: 9rem; */
+    font-size: 2.2rem;
+    right: 3rem;
+  }
+}
+@media screen and (max-width: 456px) {
+  .vertical_links {
+    right: 2.5rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  .show_cross {
+    top: 2rem;
+    right: 8.5rem;
+  }
+  .vertical_links {
+    right: 0.2rem;
+  }
+}
+@media screen and (max-width: 988px) {
+  .main {
+    margin-bottom: 8rem;
+  }
+}
